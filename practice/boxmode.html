@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>box models</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    
+    <style>
+        .box{
+            height: 100px;
+            width: 100px;
+            padding: 13px;
+            margin: 12px;
+        }
+      .box .solid{
+            border: 6px solid greenyellow;
+            box-sizing: border-box;
+        }
+       .box .dotted{
+            border: 6px dotted purple;
+            box-sizing: border-box;
+        
+        }
+    </style>
+</head>
+<body>
+    <h1> these are box contents</h1>
+    <div class="box">
+    <div class="solid" >
+        solid border
+    </div>
+    <div class="dotted" >
+        solid border
+    </div>
+</div>
+</body>
+</html>
+ 
