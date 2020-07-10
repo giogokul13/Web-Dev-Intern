@@ -7,7 +7,14 @@
         font-size: 30px;
         font-family: 'Times New Roman', Times, serif;
         color: blue;
-        font-style: normal;
+        font-style: italic ;
+
+    }
+    .small-caps{
+        font-size: 35px;
+        font-family: 'Times New Roman', Times, serif;
+        color: green;
+        font-variant:small-caps ;  /* this will make everything in small caps */
 
     }
 
