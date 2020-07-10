@@ -1,5 +1,7 @@
     /* this is for h1 text color */
-    
+    body{
+        margin: 35px;
+    }
     .title{
         color: red ;
         font-style: italic;
