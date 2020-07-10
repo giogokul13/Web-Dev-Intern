@@ -1,6 +1,8 @@
     /* this is for h1 text color */
     body{
         margin: 35px;
+        font-size: 22px;
+        
     }
     .title{
         color: red ;
