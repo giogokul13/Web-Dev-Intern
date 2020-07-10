@@ -45,3 +45,6 @@
         text-decoration: underline;
         cursor: pointer;
     }
+    .txttransform{
+        text-transform: capitalize;
+    }
