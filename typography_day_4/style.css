@@ -17,4 +17,12 @@
         font-variant:small-caps ;  /* this will make everything in small caps */
 
     }
+    .bold{
+        font-size: 35px;
+        font-family: 'Times New Roman', Times, serif;
+        color:  violet;
+        font-variant:small-caps ;  /* this will make everything in small caps */
+        font-weight: bolder;
+
+    }
 
