@@ -42,6 +42,7 @@
         text-indent: 25%;
        text-shadow: 3px 4px 6px  green;   /* this one will create a shadow  */
        letter-spacing: 5px;
+       word-spacing: 5px;
     }
     .note{
         text-align: center;
