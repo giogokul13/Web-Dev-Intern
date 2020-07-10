@@ -34,8 +34,9 @@
     }
     p{
         text-align: center;
-        color: rgb(235, 130, 130);
-
+        color: black;
+        text-indent: 25%;
+       text-shadow: 3px 4px 6px  green;   /* this one will create a shadow  */
     }
     .note{
         text-align: center;
