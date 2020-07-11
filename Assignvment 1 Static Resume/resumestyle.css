@@ -1,0 +1,14 @@
+body{
+    margin: 50px;
+}
+
+
+header{
+    background: linear-gradient(to right, rgba(236,248,254,1) 0%, rgba(189,230,250,1) 41%, rgba(116,199,241,1) 100%);
+    width: 100%;
+    height: auto;
+}
+footer{
+    background: linear-gradient(to left, rgba(236,248,254,1) 0%, rgba(189,230,250,1) 41%, rgba(116,199,241,1) 100%);
+
+}
