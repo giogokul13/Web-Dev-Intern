@@ -1,10 +1,10 @@
 body{
     margin: 50px;
     text-align: center;
-    background: url ("G:\GIT\Web-Dev-Intern\asserts\images\image.jpg");
-}
+    background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(176,202,222,1) 100%); 
+    }
 .bgcolor{
-    background-color: green;
+    background-color: rgb(216, 252, 216);
     font-size: 45px;
     display: inline-block;
     color: honeydew;
