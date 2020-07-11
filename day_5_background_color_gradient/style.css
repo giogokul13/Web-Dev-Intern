@@ -1,0 +1,12 @@
+body{
+    margin: 50px;
+    background-color: lightblue;
+    text-align: center;
+}
+
+.bgcolor{
+    background-color: green;
+    font-size: 45px;
+    display: inline-block;
+    color: honeydew;
+}
