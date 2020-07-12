@@ -3,3 +3,13 @@ this is  the first assignment of tfhe internship
 ==============================================================
 
 static resume 
+
+
+================================================================
+error while doing it  
+
+photo not loaded 
+inspected console error
+
+
+=================================================================
