@@ -1,14 +1,33 @@
 body{
     margin: 50px;
 }
-
-
 header{
     background: linear-gradient(to right, rgba(236,248,254,1) 0%, rgba(189,230,250,1) 41%, rgba(116,199,241,1) 100%);
     width: 100%;
     height: auto;
+    text-align: center;
 }
+
 footer{
     background: linear-gradient(to left, rgba(236,248,254,1) 0%, rgba(189,230,250,1) 41%, rgba(116,199,241,1) 100%);
 
+}
+.resume{
+    font-size: 50px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+fname{
+    font-size:30px ;font-weight: bold;
+}
+addr{
+    font-size:25px ;font-weight: bold;
+}
+mail{
+    font-size:20px ;font-weight: bold;
+
+}
+#carobj{
+    font-size: 25px;
 }
