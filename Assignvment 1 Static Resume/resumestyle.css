@@ -21,13 +21,19 @@ footer{
 fname{
     font-size:30px ;font-weight: bold;
 }
-addr{
+addr,qual,institute{
     font-size:25px ;font-weight: bold;
 }
-mail{
+mail,connum,per{
     font-size:20px ;font-weight: bold;
 
 }
 #carobj{
     font-size: 25px;
+}
+yop{
+    float: right;
+    font-size:25px ;font-weight: bold;
+
+
 }
