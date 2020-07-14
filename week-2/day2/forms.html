@@ -2,29 +2,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formstyle.css">
     <title>Form</title>
 </head>
 <body>
     <h1>Application form </h1>
-    <form action="forms.html">
+    <form>
    <fieldset>
        <legend> Student Application Form </legend>
-    Full Name:      <input type="text" name="fname" required> <br>
-    Last Name:      <input type="text" name="lname" required> <br>
-    Email Id:       <input type="email" name="mailid" required> <br>
-    Mobile Number:  <input type="number" name="mob" required> <br>
-    Date Of Birth:  <input type="date" name="dob"> <br>
-    Gender:         <input type="radio" name="gender" value="male"> Male <br>
+    <label for="fname">First Name</label>      <input type="text" name="fname" required> <br>
+    <label for="lname">Last Name</label>  <input type="text" name="lname" required> <br>
+    <label for="email">Email</label>  <input type="email" name="mailid" required> <br>
+    <label for="conno">Contact No.</label>    <input type="number" name="mob" required> <br>
+    <label for="dob">Date Of Birth</label>    <input type="date" name="dob"> <br>
+    <label for="gender">Gender</label>          <input type="radio" name="gender" value="male"> Male <br>
                     <input type="radio" name="gender" value="female"> Female <br>
                     <input type="radio" name="gender" value="others"> Others <br>
-    Address:        <textarea name="address" id="address" cols="30" rows="10">Enter your Address 
+    <label for="sddress">Address</label>  <textarea name="address" id="address" cols="30" rows="10">Enter your Address 
                     </textarea>  <br> 
     
-    Hobbies:        <input type="checkbox" value="sports" name="hobbies"> Sports
+    <label for="hobbies">First Name</label>          <input type="checkbox" value="sports" name="hobbies"> Sports
                     <input type="checkbox" value="programming" name="hobbies"> programmming
                     <input type="checkbox" value="culturals" name="hobbies"> culturals   <br>
     
-    Education:      <select name="education" id="education">
+    <label for="education">First Name</label>        <select name="education" id="education">
                     <option value="masters" selected>Master's </option>
                     <option value="bachelor">Bachelor's </option>
                     <option value="secondary"> Secondary</option>
