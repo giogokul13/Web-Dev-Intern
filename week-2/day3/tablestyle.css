@@ -1,0 +1,23 @@
+table{
+    border-collapse: collapse;
+    border-spacing: 13px;
+    text-align: left;
+    font-size: 25px;
+}
+td,th{
+    border: 2px solid rgb(0, 0, 0);
+    padding: 10px 15px;
+}
+th{
+background-color:rgba(41, 212, 63, 0.918);
+}
+
+caption{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+tr:nth-child(odd){
+    background-color: rgb(104, 218, 113);
+}
