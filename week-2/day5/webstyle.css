@@ -1,0 +1,23 @@
+body{
+
+    font: bolder 22px black ;
+}
+
+.container {
+    width: 100%;
+  }
+section,
+aside {
+  margin: 1.858736059%; 
+  background-color: gold;
+  padding: 5px;
+  
+}
+section {
+  float: left;
+  width: 63.197026%;    
+}
+aside {
+  float: right;
+  width: 29.3680297%; 
+}
