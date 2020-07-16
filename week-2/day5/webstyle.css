@@ -1,3 +1,5 @@
+/* this  is a style for wrd aside and section */
+
 body{
 
     font: bolder 22px black ;
@@ -21,3 +23,5 @@ aside {
   float: right;
   width: 29.3680297%; 
 }
+
+/* end style */
