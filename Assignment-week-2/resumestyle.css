@@ -3,7 +3,7 @@ body{
 }
 .Resume{
     border-radius: 25px;
-    background: linear-gradient(rgb(221, 217, 217),white);  
+    background: linear-gradient(rgb(243, 240, 240),white);  
 }
 #name,#position{
     color: rgb(70, 123, 236);
@@ -39,5 +39,29 @@ header img{
 }
 li{
     font: bolder 25px black;
+}
+.experience{
+    margin: 50px;    
+}
+.exp{  
+  width: 300px;
+  border: 2px solid rgb(70, 123, 236) ;
+  padding: 5px;
+  font-size: 20px;
+  color:rgb(70, 123, 236);
+  float: left;
+}
+.exp-con{
+    float: right;
+    font-size: 20px;
+    height: 40%;
+    margin-left: 400px;
+}
+
+.experience h1{
+    color: cornflowerblue;
+    text-align: center;
+    margin-bottom: 25px;
+
 }
 
