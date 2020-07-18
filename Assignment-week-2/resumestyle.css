@@ -26,10 +26,13 @@ header img{
 }
 
 .resume-body{
-        margin: 50px 0 50px 100px ;
+        margin: 50px 50px 50px 50px ;
+        border-bottom: 3px solid rgb(201, 194, 194);
+
 
 }
  table{
+     margin: 50px 50px 50px 100px;
      width:80%;
      height: 200px;
      border-spacing: 30px;
