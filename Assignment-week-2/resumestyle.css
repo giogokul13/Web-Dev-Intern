@@ -1,0 +1,27 @@
+body{
+    margin: 50px;
+}
+.Resume{
+    border-radius: 25px;
+    background: linear-gradient(rgb(221, 217, 217),white);  
+}
+#name,#position{
+    color: rgb(70, 123, 236);
+    font-weight: bolder;
+}
+header{
+    margin: 20px 25px 20px 25px;
+    border-bottom: 3px solid rgb(201, 194, 194);
+}
+header img{
+    border-style: solid;
+    border-color: cadetblue;
+    border-radius: 80%;
+}
+
+.contact{
+    float: right;
+    font-size: 30px;
+    line-height: 1.5;
+}
+
