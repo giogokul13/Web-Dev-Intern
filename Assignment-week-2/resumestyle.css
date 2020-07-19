@@ -1,45 +1,55 @@
+/* body margin  */
 body{
     margin: 50px; 
 }
+/* this will make a new layout with the gradient */
 body .Resume{
     border-radius: 25px;
     background: linear-gradient(rgb(211, 208, 208),white);
 }
+
+/* name and position */
 #name,#position{
     color: rgb(70, 123, 236);
     font-weight: bolder;
 }
+/* header part name image contact */
 header{
     margin: 20px 25px 20px 25px;
     border-bottom: 3px solid rgb(201, 194, 194);
 }
+/* profile image */
 header img{
     border-style: solid;
     border-color: cadetblue;
     border-radius: 80%;
 }
-
+/* contact icons */
 .contact{
     float: right;
     font-size: 30px;
 }
-
+/* skills table */
 .resume-body{
         margin: 50px 50px 50px 50px ;
         border-bottom: 3px solid rgb(201, 194, 194);
 }
+/* table style */
  table{
      margin: 50px 50px 50px 100px;
      width:80%;
      height: 200px;
      border-spacing: 30px;
 }
+/*  list items in the table */
 li{
     font: bolder 25px black;
 }
-.experience,.experience-3{
+/* experience margin */
+.experience{
     margin: 50px;    
 }
+/* experience box  company and yesrs of work */
 .exp{  
   width: 300px;
   border: 2px solid rgb(70, 123, 236);
@@ -48,26 +58,26 @@ li{
   color:rgb(70, 123, 236);
   float: left;
 }
+/* experience content  */
 .exp-con{
     float: right;
     font-size: 20px;
     height: 40%;
     margin-left: 400px;
 }
-
+/*  the word Work History */
 .experience h1{
     color: cornflowerblue;
     text-align: center;
     margin-bottom: 25px;
 
 }
+/* experience content list */
 .exp-con li{
     font-size: 25px;
     font-weight: 500;
 }
-.year{
-    float: left;
-}
+/* years of work in box  */
 date{
     color: black;
 }
