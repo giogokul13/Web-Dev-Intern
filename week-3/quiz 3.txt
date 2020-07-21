@@ -1,0 +1,12 @@
+// minimum of 2 no's//
+
+
+function min( x , y)
+{
+  if (x < y)
+  {return x;
+  }
+  else{ 
+    return y;
+  }
+}
