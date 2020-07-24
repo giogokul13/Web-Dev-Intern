@@ -1,0 +1,22 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM manipulation check</title>
+</head>
+<script type="text/javascript">
+  function display() 
+  {
+    var fname = document.getElementById('name').value;
+    var lname = document.getElementById('lastname').value;
+    document.write( <h1> " first Name = " + fname  + " Last Name = " + lname </h1>);
+  }
+
+</script>
+<body>
+    <input type="text" id="name" > 
+    <input type="text" id="lastname" > 
+    <button onclick="display()"> click me </button>
+
+</body>
+</html>
