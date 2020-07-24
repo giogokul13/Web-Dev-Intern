@@ -1,0 +1,16 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Changing the document </title>
+    <script type="text/Javascript">
+        let para = document.body.getElementsByTagName('p');
+        document.body.insertBefore(para[2],para[0]);
+    </script>
+</head>
+<body>
+    <p>this is an ice cream</p>
+    <p>this is an apple </p>
+    <p>this is an orange </p>
+</body>
+</html>
