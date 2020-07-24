@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM manipulation</title>
+    <script type="text/javascript">
+        function showname(){
+            document.getElementById("namerole").innerHTML = "GOKUL";
+            var name = document.getElementById("namerole");
+            name.style.color = "red";
+        }
+        // this function uses querySelector 
+        function showrolemodel(){
+            document.querySelector("#namerole").innerHTML = "Elon Musk";
+            var name = document.getElementById("namerole");
+            name.style.color = "orange";
+        }
+    </script>
+</head>
+<body>
+  <h1 id="namerole">here you can see your Name and your Role model's name</h1>
+    <button onclick="showname()"> Show Name</button>
+    <button onclick="showrolemodel()"> Show Role Model </button>
+
+</body>
+</html>
