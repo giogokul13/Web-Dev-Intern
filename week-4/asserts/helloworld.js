@@ -1,0 +1,1 @@
+alert(" this is my javascript pgm called xusing script src tag");
