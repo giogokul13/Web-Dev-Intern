@@ -8,12 +8,24 @@
         function div1(){
         var a =document.getElementById("class1");
         a.style.backgroundColor = "blue";
+        a.style.color = "white";
+        }
+        //change color fn()
+        function change(){
+          var changecolor = document.getElementsByTagName("h1");
+          changecolor[0].style.color = "pink";
+          changecolor[1].style.color = " orange";  
         }
     </script>
 </head>
 <body>
-    <div class="class1"  onclick="div1()" id="class1" style="color: brown; height: fit-content; width: fit-content; background-color: chartreuse;" >
+    <div onclick="div1()" id="class1" style="color: brown; height: 100px;
+     width: 100px; background-color: chartreuse;" >
         hi this box will change to blue color 
     </div>
+
+    <h1> this text will will change to pink when clicked on  change color</h1>
+    <h1> this text will change to orange color when clicked on change color</h1>
+    <button onclick="change()" >Change Color</button>
 </body>
 </html>
