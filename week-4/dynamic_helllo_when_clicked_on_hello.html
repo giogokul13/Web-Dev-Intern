@@ -1,0 +1,22 @@
+<!-- This pgm will say hello when you click on the button  -->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Hello</title>
+    <script type="text/javascript">
+        function sayhello(){
+            var newtext = document.createElement("H2");
+            var text = document.createTextNode(" HELLO");
+            newtext.appendChild(text);
+            document.body.appendChild(newtext);
+
+        }
+    </script>
+</head>
+<body>
+    <h1>this program will dynamically say hello to you when you click on this button</h1>
+    <button onclick="sayhello()"> Click On Me To Say Hello</button>
+</body>
+</html>
