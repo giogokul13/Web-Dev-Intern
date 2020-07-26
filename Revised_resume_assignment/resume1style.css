@@ -1,0 +1,112 @@
+/* style.css */
+html{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5;
+    background: #f2f2f2;
+    color: #323232;
+}
+img{
+    max-width: 100%;
+}
+.icon{
+    fill: currentColor;
+    display: inline-block;
+    font-size: inherit;
+    height: 1em;
+    overflow: visible;
+}
+a{
+    color: #323232;
+}
+a:hover{
+    text-decoration: underline;
+}
+.container{
+    max-width: 960px;
+    margin: 40px auto;
+    padding: 32px;
+    background: white;
+    box-shadow: 0 2px 4px rgb(red, green, blue);
+}
+section{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-gap: 20px;
+    border-bottom: 1px solid lightgrey;
+}
+section:last-child{
+    border-bottom: none;
+}
+.section-title{
+    font-weight: bolder;
+    font-size: 18px;
+}
+
+/* main info  */
+img .profile{
+    width: 130px;
+}
+.name{
+    font-size: 48px;
+    line-height: 1;
+}
+.my-title{
+    font-size: 24px;
+    font-weight: 300;
+    color: #236f02;
+}
+.links{
+    display: flex;
+    margin: 10px 0 20px  0;
+}
+.link-item{
+    display: flex;
+    flex: 1;
+    align-items: center;
+}
+.link-item svg{
+    margin-right: 6px;
+}
+.job{
+    padding-bottom: 24px;
+    margin-bottom: 24px;
+    border-bottom: 1px solid lightgrey;
+}
+.job-title{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+.job-company{
+    font-weight: bolder;
+    line-height: 1.2;
+}
+
+/* Skills */
+.skills-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    margin-bottom: 24px;
+}
+.skills-container ul{
+    margin-left: 20px;
+    list-style-type: disc;
+}
+/* interest */
+.interest-container{
+    display: flex;
+    justify-content: space-between;
+}
+.interest-container img{
+    height: 35px;
+    opacity: 0.75;
+}
+/* references */
+.references{
+    font-size: 18px;
+}
