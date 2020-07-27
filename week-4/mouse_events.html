@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+    <style>
+       
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Events</title>
+    <link rel="stylesheet" href="asserts/eventstyles.css">
+    <script type="text/javascript">
+        function clicked(){
+            document.querySelector("#content").innerHTML = " Mouse Clicked" ;
+        }
+        function dblclick(){
+            document.querySelector("#content").innerHTML = " Mouse Double Clicked" ;
+
+        }
+        function mouseup(){
+            document.querySelector("#content").innerHTML = " Mouse moved Up" ;
+        }
+        function mousedown(){
+            document.querySelector("#content").innerHTML = " Mouse moved Down" ;
+        }
+        function mouseover(){
+            document.querySelector("#content").innerHTML = " Mouse moved Over" ;
+        }
+        function mouseout(){
+            document.querySelector("#content").innerHTML = " Mouse moved Out" ;
+        }
+
+    </script>
+
+</head>
+<body> 
+    <div id="content">Capture Your Action Here...</div>
+    <hr>
+    <div class="buttons">
+    <button onclick="clicked()" > Single Click Here....</button>
+    <button ondblclick="dblclick()">Double click here... </button>
+    <button onmouseup="mouseup()">Mouse Up here ....</button>
+    <button onmousedown="mousedown()" >Mouse Down </button>
+    <button onmouseover="mouseover()">Mouse Over </button>
+    <button onmouseout="mouseout()">Mouse Out </button>
+
+    </div>
+</body>
+</html>
