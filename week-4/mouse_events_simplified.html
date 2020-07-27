@@ -1,0 +1,45 @@
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="asserts/eventstyles.css">
+        <title>Simplified Mouse Events</title>
+        <script type="text/javascript">
+
+            var x = document.querySelector("#button1");
+            x.addEventListener("click", click);
+            x.addEventListener("dblclick", dblclick);
+            x.addEventListener("mouseout",mouseout );
+            x.addEventListener("mouseover", mouseover);
+            x.addEventListener("mouseup", mouseup);
+            x.addEventListener("mousedown", mousedown);
+            function click(){
+                document.querySelector("#content").innerHTML = "Mouse Clicked Once";
+            }
+            function dblclick(){
+                document.querySelector("#content").innerHTML = "Mouse Clicked Twice";
+            }
+            function mouseout(){
+                document.querySelector("#content").innerHTML = "Mouse Moved Out";
+            }
+            function mouseover(){
+                document.querySelector("#content").innerHTML = "Mouse Moved Over";
+            }
+            function mouseup(){
+                document.querySelector("#content").innerHTML = "Mouse Moved Up";
+            }
+            function mousedown(){
+                document.querySelector("#content").innerHTML = "Mouse Moved Down";
+            }
+        
+        </script>
+    </head>
+    <body>
+        <div><h1 id="content">Capture Your Action Here...</h1></div>
+                         <hr>
+        <div class="button">
+        <button id="button1">Perform Some Action Here.....</button>
+        </div>
+    </body>
+    </html>
