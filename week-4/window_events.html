@@ -1,0 +1,27 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Windows Events</title>
+    <script type="text/javascript">
+        // var a = document.querySelector(h1);
+        function loadme(){
+            alert(" Hi Welcome you have just loaded this page ");
+            document.querySelector("h1").innerHTML = " page loaded";
+        }
+        
+        function unloadme(){
+            alert("Hi you have just Unloaded the page ");
+            document.querySelector("h1").innerHTML = " page unloaded";
+        }
+        function resizeme(){
+            alert(" Hi you have just resized the page ");
+            document.querySelector("h1").innerHTML = " page resized";
+        }    
+    </script>
+</head>
+<body onload="loadme()" onunload="unloadme()" onresize="resizeme();">
+
+    <h1 id="text">Show Text</h1>
+</body>
+</html>
