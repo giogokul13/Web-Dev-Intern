@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="asserts/eventstyles.css">
+<script type="text/javascript">
+    function formsubmit(){
+        alert(" Are you sure you want to submit this form ...?");
+    }
+    function formreset(){
+        alert("Resetting the form may revert you in losing all the data are you sure ....?");
+    }
+    function numvalid(){
+        alert("Enter only numbers / dont leave this field empty..");
+    }
+    function emailvalid(){
+        alert("enter only valid email address");
+    }
+    function ipfocus(){
+        alert("now you are entering some data");
+    }
+</script>    
+</head>
+<body>
+    <form method="POST" action="form events.html" onsubmit="formsubmit()" onreset="formreset()">
+        <fieldset>
+        <legend>Application Form</legend>
+        <label for="Fullname">Full Name</label>
+        <input type="text" id="fname" required > <br>
+        <label for="age">Age</label>
+        <input type="number" id="age" required > <br>
+        <label for="mobile">Mobile Number.</label>
+        <input type="number" id="number" oninvalid="numvalid()" required> <br>
+        <label for="email">Email Address</label>
+        <input type="email" id="email" oninvalid="emailvalid()" required> <br>
+        <button type="submit"> Submit</button>
+        <button type="reset">Reset</button>
+    </fieldset>
+    </form>
+</body>
+</html>
