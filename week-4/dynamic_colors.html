@@ -1,0 +1,19 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic colors</title>
+    <script type="text/javascript">
+        function changebg(){
+            let colorpicker = document.querySelector("#color").value ;
+            document.body.style.background = colorpicker;
+        }
+    
+    </script>
+</head>
+<body>
+    <label for="color"> Enter a color here to change the background color</label>
+    <input type="text" id="color"> <br>
+    <button type="submit" onclick="changebg()"> Change </button>
+</body>
+</html>
