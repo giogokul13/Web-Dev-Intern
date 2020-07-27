@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>keyboard events</title>
+ 
+</head>
+<body>
+
+    
+    <h1 id="h1">Action captured</h1>
+    <input type="text" id="box">
+
+
+    <script type="text/javascript">
+        var listen = document.getElementById("box");
+        document.getElementById("box").addEventListener("keydown", downkey);
+        document.getElementById("box").addEventListener("keyup", upkey);
+        document.getElementById("box").addEventListener("keypress", presskey);
+        function downkey(){
+            document.getElementById("h1").innerHTML = "down Key";
+            
+        }
+        function upkey(){
+            document.getElementById("h1").innerHTML = "Up Key";
+            
+        }
+        function presskey(){
+            document.getElementById("h1").innerHTML = "Key Pressed";
+            
+        }
+    
+    </script>
+</body>
+</html>
