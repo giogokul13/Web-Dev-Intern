@@ -6,7 +6,7 @@
  font-size: 40px ;
  margin: 100px 583px
 }
-button{
+.buttons button{
     padding: 25px;
 }
 .buttons{
@@ -22,3 +22,11 @@ button{
 }
 
 /* end simplified mouse events */
+
+/* form styles */
+
+form{
+    width: 200px;
+    height: 400px;
+    line-height: 35px;
+}
