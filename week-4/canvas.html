@@ -6,13 +6,26 @@
    
 </head>
 <body>
-    <canvas id="canvas1" width="300" height="300">
-    </canvas>
+    <!-- <canvas id="canvas1"> </canvas>
+        <canvas id="canvas2" height="500px" width="500"></canvas> -->
+        <canvas id="canvas3" ></canvas>
+    
     <script type="text/javascript">
-        let canvas = document.querySelector("#canvas1");
-        let context = canvas.getContext("2d");
-        context.fillStyle = "orange";
-        context.fillRect(200,200,100,60);
+
+    canvas 1
+        // let canvas = document.querySelector("#canvas1");
+        // let context = canvas.getContext("2d");
+        // context.fillStyle = "orange";
+        // context.fillRect(10,10,100,60);
+    canvas2
+        // let canvas2 = document.querySelector("#canvas2").getContext("2d");
+        // canvas2.strokeRect(50,100,150,200);
+        // canvas2.strokeStyle = "red";
+        // canvas2.lineWidth = "5";
+        let canvas3 = document.querySelector("#canvas3").getContext("2d");
+        canvas3.font = "23px bold";
+        canvas3.fillStyle = "green";
+        canvas3.fillText("hi this text is in canvas ", 10,50);
     </script>
 </body>
 </html>
