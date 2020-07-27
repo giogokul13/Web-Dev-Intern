@@ -1,0 +1,28 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LetterCount</title>
+    <script type="text/javascript">
+        var element = document.querySelector("#box");
+        var len = document.querySelector("#length");
+        element.addEventListener("input",count);
+        function count(){
+            len.textContent = element.value.length ;
+        }
+    </script>
+</head>
+<body>
+    <input type="text" id="box">
+    <br>
+    String length : <span id="length">00</span>
+       <script type="text/javascript">
+        var element = document.querySelector("#box");
+        var len = document.querySelector("#length");
+        element.addEventListener("input",count);
+        function count(){
+            document.querySelector("#length").innerHTML = element.value.length ;
+        }
+    </script>
+</body>
+</html>
