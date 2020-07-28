@@ -1,0 +1,61 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form events</title>
+    <style>
+        form{
+            width: max-content;
+            font-size: 20px;
+            line-height: 40px;
+        }
+    </style>
+    <script type="text/javascript">
+        function formsubmit(){
+            alert("are you sure do you want to submit the form ?... ");
+        }
+        function formreset(){
+            alert("all your data might be lost are you sure  ?....")
+        }
+        function load(){
+            document.querySelector("#submit").disabled = true;
+        }
+        function activateButton(){
+            let element = document.querySelector("#terms");
+            if(element.checked) {
+        document.querySelector("#submit").disabled = false;
+       }
+       else  {
+        document.querySelector("#submit").disabled = true;
+      }
+
+        }
+    
+    </script>
+</head>
+<body onload="load()">
+    <form action="formevents_test.html" onsubmit="formsubmit()" onreset="formreset()">
+        <fieldset>
+            <legend>Application Form</legend>
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" autofocus required> <br>
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" required> <br>
+            <label for="email">Email Id</label>
+            <input type="email" id="mail" required> <br>
+            <label for="mobile">Mobile Number</label>
+            <input type="number" id="number" required> <br>
+            <label for="gender"> Gender</label>
+           <input type="radio" name="gender" id="male"> Male   <input type="radio" name="gender" id="femaLe"> Female
+           <input type="radio" name="gender" id="others"> Others
+            <br>
+            <input type="checkbox" name="terms" id="terms" onchange="activateButton()">  I Agree Terms & Coditions
+            <br><br>
+              <input type="submit" name="submit" id="submit"> 
+            <button type="reset">Reset</button>
+        </fieldset>
+    </form>
+
+    
+</body>
+</html>
