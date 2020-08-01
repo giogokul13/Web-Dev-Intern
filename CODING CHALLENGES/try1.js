@@ -33,7 +33,7 @@ function get_sorted_without_duplicates(string){
             }
         }
     }
-    // console.log( "the final array is : "+ finalarr);
+    console.log(finalarr);
 
     // array to string 
     for (let i=0;i<finalarr.length;i++)
@@ -41,7 +41,8 @@ function get_sorted_without_duplicates(string){
         done +=finalarr[i];
     }
     // console.log("the final string after rearranging :  "+ done);
-    return done;
+    console.log(done);
 }
+exports.get_sorted_without_duplicates = get_sorted_without_duplicates;
 
-get_sorted_without_duplicates("google");
+// get_sorted_without_duplicates("missipi");
