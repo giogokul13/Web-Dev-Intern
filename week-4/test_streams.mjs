@@ -10,6 +10,6 @@ RS.on("data",function(buffer){
     console.log(buffer);
 });
 
-Ws.write(" the data is written here overlapped");
+Ws.write(" the data  written here is overlapped");
 console.log("the file content is replaced !!!..");
 
