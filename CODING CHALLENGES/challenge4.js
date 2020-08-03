@@ -53,9 +53,11 @@ function get_sorted_diff_string(first, second){
 // creating the final array and inserting ..
         for(let i=0;i<done.length;i++){ 
             final+=done[i]; }
-        //console.log(final);   display the final array list .. 
+
+        console.log(final); 
         return final;
 }
+get_sorted_diff_string("pineapple","apple");
 // console.assert("" , get_sorted_diff_string("apple", "apple"))
 // console.assert("aelp", get_sorted_diff_string("apple", ""))
 // console.assert("do", get_sorted_diff_string("dog", "pig"))
