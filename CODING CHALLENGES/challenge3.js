@@ -22,7 +22,7 @@ function get_odds_list(count)
     for(let i=0;i < a.length ; i++){
         b[i] = a[a.length - i -1];     
     }
-    // console.log(b);  to print the array !
+    console.log(b); 
     return b ;
 
     // console.assert([1],get_odds_list(1))
@@ -30,4 +30,4 @@ function get_odds_list(count)
     // console.assert([5,3,1],get_odds_list(3))
     // console.assert([9,7,5,3,1], get_odds_list(5))
 } 
-get_odds_list(10);
+get_odds_list();
