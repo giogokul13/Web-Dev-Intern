@@ -49,3 +49,6 @@ var Showroom = /** @class */ (function (_super) {
 var r15 = new Showroom("R15", "YAMAHA", "R15 V3", 150000);
 r15.getshowdet("Hosur");
 r15.showroomdet();
+var r3 = new Showroom("R3", "YAMAHA", "R3 2020", 400000);
+r3.getshowdet("Bangalore");
+r3.showroomdet();
