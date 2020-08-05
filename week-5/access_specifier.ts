@@ -1,7 +1,5 @@
 class company{
-    emps(emps: any) {
-        throw new Error("Method not implemented.");
-    }
+
     private cid:number;
     cname:string;
     constructor(id:number,name:string){
