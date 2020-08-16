@@ -1,0 +1,72 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/ball_styles.css">
+    <title>Bouncing ball</title>
+    
+</head>
+<body> 
+    <center>
+    <div class="main">
+        <h1>Ball Game Challenge</h1>
+        <div class="controls">
+            <button title="Pause the animation" onclick="stop();">Pause</button>
+            <button title="Resume the animation" onclick="start();">Resume</button>
+        </div>
+            <canvas width="700" height="500" id="canvas" onmousedown="myFunction(event);"></canvas>
+    </div>
+    </center>
+    <script type="text/javascript">
+        var req ;
+        function myFunction (event) {
+            var canvas = document.getElementById("canvas");
+            var context;
+            var ballradius = 30;
+            var xspeed = 4;  
+            var yspeed = 4;
+            var x = event.clientX - canvas.getBoundingClientRect().left ;
+            var y = event.clientY - canvas.getBoundingClientRect().top ;
+            var canwidth = document.getElementById("canvas").clientWidth;
+            var canheight = document.getElementById("canvas").clientHeight;
+            var req = window.requestAnimationFrame(DrawAndAnimate);
+
+            function DrawAndAnimate(x,y){
+                context= canvas.getContext('2d');
+                context.clearRect(0,0,canwidth,canheight);
+                context.beginPath();
+                context.fillStyle = "red" ; 
+                context.arc(x,y,ballradius,0,Math.PI*2,true);
+                context.closePath();
+                context.fill();
+
+                // motion of the ball....
+                x += xspeed;
+                y += yspeed;
+
+                //bounce back condition ...
+
+                if(x < ballradius || x > (canwidth-ballradius)){
+                    xspeed =-xspeed;
+                }
+                if(y < ballradius || y > (canheight-ballradius)){
+                    yspeed =-yspeed;
+                }
+                requestAnimationFrame(DrawAndAnimate);
+            }
+        
+          setInterval(DrawAndAnimate,100);                 
+        }
+        function start(){
+         req = window.requestAnimationFrame(DrawAndAnimate);
+        }
+
+        function stop(){
+            window.cancelAnimationFrame(req);
+        }
+
+        
+    
+    </script>
+</body>
+</html>
