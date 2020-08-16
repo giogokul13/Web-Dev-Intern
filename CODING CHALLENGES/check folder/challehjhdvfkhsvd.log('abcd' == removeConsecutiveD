@@ -1,0 +1,4 @@
+console.log('abcd' == removeConsecutiveDuplicates('aaaaabbbbbbccccdddd'));
+console.log('abdsdsd' == removeConsecutiveDuplicates('abdsdsd'));
+console.log('zdadsdeui12' == removeConsecutiveDuplicates('zzdadsdeuui112'));
+console.log('iead2s' == removeConsecutiveDuplicates('ieaaaaddd22ss'));
