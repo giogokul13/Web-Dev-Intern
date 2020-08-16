@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/ball_styles.css">
+    <title>Draw circle</title>
+
+<style>
+  
+</style>
+
+</head>
+<body>
+    <center>
+        <div class="main">
+            <h1>Ball Game Challenge</h1>
+            <div class="controls">
+                <button title="Pause the animation">Pause</button>
+                <button title="Resume the animation">Resume</button>
+            </div>
+                <canvas width="700" height="500" id="canvas"></canvas>
+        </div>
+        </center>
+        <script type="text/javascript">
+
+            var canvas = document.getElementById("canvas");
+            var con = canvas.getContext("2d");
+            var canwidth = document.getElementById("canvas").clientWidth;
+            var canheight = document.getElementById("canvas").clientHeight;
+            var ballradius = 25;
+            var xspeed = 2;
+            var yspeed = 3;
+
+
+            //  mouse events 
+             
+            canvas.onmousedown = function(event){
+               // ball creation 
+                var x = event.clientX - canvas.getBoundingClientRect().left
+                var y = event.clientY - canvas.getBoundingClientRect().top
+                con.beginPath();
+                con.arc(x,y,ballradius, 0 ,Math.PI * 2 ,true);
+                con.fillStyle = "red";
+                con.fill();
+               
+            }
+
+           
+            </script>
+        
+</body>
+</html>
