@@ -1,0 +1,69 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/ball_styles.css">
+    <title>Bouncing ball</title>
+    
+</head>
+<body> 
+    <center>
+    <div class="main">
+        <h1>Ball Game Challenge</h1>
+        <div class="controls">
+            <button title="Pause the animation">Pause</button>
+            <button title="Resume the animation">Resume</button>
+        </div>
+            <canvas width="700" height="500" id="canvas" onclick="draw();"></canvas>
+    </div>
+    </center>
+
+    <!-- Script javascript -->
+    <script type="text/javascript">
+        var ballradius = 30;
+        var ballspeed = 100;
+        var can = document.getElementById("canvas").getContext("2d");
+        var canwidth = document.getElementById("canvas").clientWidth;
+        var canheight = document.getElementById("canvas").clientHeight;
+        // alert("width and height :" + canwidth + " " + canheight);
+        var Ball = function(){
+            this.x = 60;
+            this.y = 40;
+            this.xspeed = 2;
+            this.yspeed = 3;
+        }
+        // used to create a ball 
+        Ball.prototype.draw = function(){
+            can.beginPath();
+            can.arc(this.x,this.y,ballradius,0,Math.PI * 2 ,true);
+            can.fillStyle = "red";
+            can.fill();
+        }
+        // used to move the ball
+
+        Ball.prototype.move = function(){
+            this.x += this.xspeed;
+            this.y += this.yspeed;
+        }
+
+        // this function is used to bounce back to
+        Ball.prototype.bounce = function(){
+
+            if(this.x < ballradius || this.x > (canwidth-ballradius)){
+                this.xspeed =-this.xspeed;
+            }
+            if(this.y < ballradius || this.y > (canheight-ballradius)){
+                this.yspeed =-this.yspeed;
+            }
+        } 
+        var ball = new Ball();
+
+            setInterval(function(){
+            can.clearRect(0,0,700,500);
+            ball.draw();
+            ball.move();
+            ball.bounce();
+        },-ballspeed);
+    </script>
+</body>
+</html>
