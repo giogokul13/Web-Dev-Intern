@@ -1,0 +1,11 @@
+body{
+    align-content: center;
+    margin-top: 80px;
+}
+.main{
+    margin: 40px 200px 20px 200px;
+}
+.main canvas{
+    margin-top: 20px;
+    background-color: rgb(207, 217, 236);
+}
